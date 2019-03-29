@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="JupyterCode">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <productionModeScript />
+          <Notebook><![CDATA[{"cells":[{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"},"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"Requirement already satisfied: pyarrow in c:\\program files\\alteryx\\bin\\miniconda3\\pythontool_venv\\lib\\site-packages\r\nRequirement already satisfied: numpy>=1.14 in c:\\program files\\alteryx\\bin\\miniconda3\\pythontool_venv\\lib\\site-packages (from pyarrow)\r\nRequirement already satisfied: six>=1.0.0 in c:\\program files\\alteryx\\bin\\miniconda3\\pythontool_venv\\lib\\site-packages (from pyarrow)\r\n"}],"source":"# List all non-standard packages to be imported by your \n# script here (only missing packages will be installed)\nfrom ayx import Package\nPackage.installPackages(['pyarrow'])"},{"cell_type":"code","execution_count":2,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"SUCCESS: writing outgoing connection data 1\n"},{"name":"stderr","output_type":"stream","text":"c:\\program files\\alteryx\\bin\\miniconda3\\pythontool_venv\\lib\\site-packages\\pandas\\core\\generic.py:2130: UserWarning: The spaces in these column names will not be changed. In pandas versions < 0.14, spaces were converted to underscores.\n  dtype=dtype)\n"},{"data":{"text/html":"<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Street Address</th>\n      <th>Latitude</th>\n      <th>Longitude</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>0 161 STREET &amp; RIVER AVENUE</td>\n      <td>40.819225</td>\n      <td>-73.920731</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>0 200 STREET &amp; SOUTHERN BLVD</td>\n      <td>40.864941</td>\n      <td>-73.884903</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>0 44 DRIVE FOOT E.RIVER</td>\n      <td>40.745695</td>\n      <td>-73.936058</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>0 5 AVE &amp; 42 STR</td>\n      <td>40.753158</td>\n      <td>-73.981132</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>0 BATTERY PARK</td>\n      <td>40.744585</td>\n      <td>-73.974468</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>0 BOARDWALK AT W 8 STREET</td>\n      <td>40.577002</td>\n      <td>-73.986038</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>0 CENTRAL PARK WEST</td>\n      <td>14.66772</td>\n      <td>-91.52335</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>0 CENTRAL TAXI HOLD</td>\n      <td>40.635351</td>\n      <td>-73.791962</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>0 CENTRAL TERMINAL</td>\n      <td>40.752516</td>\n      <td>-73.972672</td>\n    </tr>\n    <tr>\n      <th>9</th>\n      <td>0 CENTRAL TERMINAL BLD 1</td>\n      <td>30.029455</td>\n      <td>31.34577</td>\n    </tr>\n    <tr>\n      <th>10</th>\n      <td>0 CENTRAL TERMINAL BLDG</td>\n      <td>40.785006</td>\n      <td>-73.877445</td>\n    </tr>\n    <tr>\n      <th>11</th>\n      <td>0 CHELSEA PIERS</td>\n      <td>40.750014</td>\n      <td>-74.008464</td>\n    </tr>\n    <tr>\n      <th>12</th>\n      <td>0 CHELSEA PIERS - PIER 61</td>\n      <td>40.750014</td>\n      <td>-74.008464</td>\n    </tr>\n    <tr>\n      <th>13</th>\n      <td>0 CHELSEA PIERS/PIER 61</td>\n      <td>40.742371</td>\n      <td>-74.004063</td>\n    </tr>\n    <tr>\n      <th>14</th>\n      <td>0 CONCOURSE B</td>\n      <td>40.785006</td>\n      <td>-73.877445</td>\n    </tr>\n    <tr>\n      <th>15</th>\n      <td>0 E 72ST CENTRAL PK DRIVE NORTH</td>\n      <td>40.758375</td>\n      <td>-73.966583</td>\n    </tr>\n    <tr>\n      <th>16</th>\n      <td>0 E WEST FOOD COURT</td>\n      <td>40.785006</td>\n      <td>-73.877445</td>\n    </tr>\n    <tr>\n      <th>17</th>\n      <td>0 EAST 27 STREET</td>\n      <td>40.62528</td>\n      <td>-73.949509</td>\n    </tr>\n    <tr>\n      <th>18</th>\n      <td>0 FLUSHING MEADOW PARK</td>\n      <td>40.708126</td>\n      <td>-73.830025</td>\n    </tr>\n    <tr>\n      <th>19</th>\n      <td>0 GRAND CENTRAL STATION</td>\n      <td>40.752516</td>\n      <td>-73.972672</td>\n    </tr>\n    <tr>\n      <th>20</th>\n      <td>0 GRAND CENTRAL STATION TERMINAL</td>\n      <td>40.752516</td>\n      <td>-73.972672</td>\n    </tr>\n    <tr>\n      <th>21</th>\n      <td>0 GRAND CENTRAL TERMINAL</td>\n      <td>40.752103</td>\n      <td>-73.977601</td>\n    </tr>\n    <tr>\n      <th>22</th>\n      <td>0 GRAND CENTRAL TRML LOWER</td>\n      <td>40.752516</td>\n      <td>-73.972672</td>\n    </tr>\n    <tr>\n      <th>23</th>\n      <td>0 GREELEY SQUARE</td>\n      <td>40.748655</td>\n      <td>-73.988104</td>\n    </tr>\n    <tr>\n      <th>24</th>\n      <td>0 HERALD SQUARE PARK</td>\n      <td>40.750839</td>\n      <td>-73.999413</td>\n    </tr>\n    <tr>\n      <th>25</th>\n      <td>0 HUNTS POINT</td>\n      <td>40.804276</td>\n      <td>-73.885609</td>\n    </tr>\n    <tr>\n      <th>26</th>\n      <td>0 INSIDE CENTRAL PARK</td>\n      <td>40.764431</td>\n      <td>-73.962467</td>\n    </tr>\n    <tr>\n      <th>27</th>\n      <td>0 INSIDE CENTRAL PARK/LASKER RINK</td>\n      <td>40.764431</td>\n      <td>-73.962467</td>\n    </tr>\n    <tr>\n      <th>28</th>\n      <td>0 J.F.K. AIRPORT</td>\n      <td>40.635351</td>\n      <td>-73.791962</td>\n    </tr>\n    <tr>\n      <th>29</th>\n      <td>0 JFK AIRPORT</td>\n      <td>40.635351</td>\n      <td>-73.791962</td>\n    </tr>\n    <tr>\n      <th>...</th>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n    </tr>\n    <tr>\n      <th>20850</th>\n      <td>ONE CROSS ISLAND PLZ</td>\n      <td>40.67391</td>\n      <td>-73.731733</td>\n    </tr>\n    <tr>\n      <th>20851</th>\n      <td>ONE ORCHARD BEACH ROAD</td>\n      <td>40.86631</td>\n      <td>-73.79595</td>\n    </tr>\n    <tr>\n      <th>20852</th>\n      <td>ONE PENN PLAZA</td>\n      <td>40.751822</td>\n      <td>-73.992622</td>\n    </tr>\n    <tr>\n      <th>20853</th>\n      <td>ONE PLAZA PENN STATION</td>\n      <td>40.799925</td>\n      <td>-73.971668</td>\n    </tr>\n    <tr>\n      <th>20854</th>\n      <td>P.O. BOX 34442, S-TAX2</td>\n      <td>47.60215</td>\n      <td>-122.328686</td>\n    </tr>\n    <tr>\n      <th>20855</th>\n      <td>PARK AVENU &amp; GRAND CENTRAL</td>\n      <td>33.343149</td>\n      <td>44.4021</td>\n    </tr>\n    <tr>\n      <th>20856</th>\n      <td>PARK AVENU @ GRAND CENTRAL</td>\n      <td>40.752516</td>\n      <td>-73.972672</td>\n    </tr>\n    <tr>\n      <th>20857</th>\n      <td>PENN STA. AMTRAK LEVEL</td>\n      <td>40.750839</td>\n      <td>-73.999413</td>\n    </tr>\n    <tr>\n      <th>20858</th>\n      <td>PENN STATI 34 STREET</td>\n      <td>40.750839</td>\n      <td>-73.999413</td>\n    </tr>\n    <tr>\n      <th>20859</th>\n      <td>PENN STATI AMTRAK LEVEL</td>\n      <td>40.750839</td>\n      <td>-73.999413</td>\n    </tr>\n    <tr>\n      <th>20860</th>\n      <td>PIER # 17 SOUTH STREET SEAPORT</td>\n      <td>not found</td>\n      <td>not found</td>\n    </tr>\n    <tr>\n      <th>20861</th>\n      <td>PIER 17 SOUTH STREET SEAPORT</td>\n      <td>40.70849</td>\n      <td>-74.001274</td>\n    </tr>\n    <tr>\n      <th>20862</th>\n      <td>PIER 59 CHELSEA PIERS</td>\n      <td>40.750014</td>\n      <td>-74.008464</td>\n    </tr>\n    <tr>\n      <th>20863</th>\n      <td>PIER 60 CHELSEA PIERS</td>\n      <td>40.750014</td>\n      <td>-74.008464</td>\n    </tr>\n    <tr>\n      <th>20864</th>\n      <td>PIER 60 WEST 23 STREET</td>\n      <td>40.7447</td>\n      <td>-73.997069</td>\n    </tr>\n    <tr>\n      <th>20865</th>\n      <td>PIER 60 WESTSIDE HIGHWAY</td>\n      <td>40.742371</td>\n      <td>-74.004063</td>\n    </tr>\n    <tr>\n      <th>20866</th>\n      <td>PIER 62 CHELSEA PIERS</td>\n      <td>40.735111</td>\n      <td>-74.01017</td>\n    </tr>\n    <tr>\n      <th>20867</th>\n      <td>PIER 62 WEST 23 STREET</td>\n      <td>40.7447</td>\n      <td>-73.997069</td>\n    </tr>\n    <tr>\n      <th>20868</th>\n      <td>PIER 62 WEST 23 STREET - CHELSEA PIER</td>\n      <td>40.742371</td>\n      <td>-74.004063</td>\n    </tr>\n    <tr>\n      <th>20869</th>\n      <td>PIER 81 W.41ST ST.</td>\n      <td>40.759125</td>\n      <td>-73.996339</td>\n    </tr>\n    <tr>\n      <th>20870</th>\n      <td>PIER 83 WEST 43 STREET</td>\n      <td>40.7597</td>\n      <td>-73.993564</td>\n    </tr>\n    <tr>\n      <th>20871</th>\n      <td>PIER I WEST 70 STREET</td>\n      <td>40.779392</td>\n      <td>-73.987645</td>\n    </tr>\n    <tr>\n      <th>20872</th>\n      <td>PLAZA 2025 RICHMOND AVENUE</td>\n      <td>40.615672</td>\n      <td>-74.157071</td>\n    </tr>\n    <tr>\n      <th>20873</th>\n      <td>SPACE 12 PENN STATION</td>\n      <td>40.750839</td>\n      <td>-73.999413</td>\n    </tr>\n    <tr>\n      <th>20874</th>\n      <td>SPACE NO.1 PENN STATION 33RD STREET</td>\n      <td>40.750839</td>\n      <td>-73.999413</td>\n    </tr>\n    <tr>\n      <th>20875</th>\n      <td>T-4 JFK AIRPORT</td>\n      <td>40.635351</td>\n      <td>-73.791962</td>\n    </tr>\n    <tr>\n      <th>20876</th>\n      <td>TERMINAL 4 JFK INTERNATIONAL AIRPORT</td>\n      <td>40.635351</td>\n      <td>-73.791962</td>\n    </tr>\n    <tr>\n      <th>20877</th>\n      <td>TERMINAL O JFK INTERNATIONAL AIRPORT</td>\n      <td>40.635351</td>\n      <td>-73.791962</td>\n    </tr>\n    <tr>\n      <th>20878</th>\n      <td>TERMINAL O JFK INT'L AIRPORT</td>\n      <td>not found</td>\n      <td>not found</td>\n    </tr>\n    <tr>\n      <th>20879</th>\n      <td>TERMINIAL JFK</td>\n      <td>40.635351</td>\n      <td>-73.791962</td>\n    </tr>\n  </tbody>\n</table>\n<p>20880 rows Ã 3 columns</p>\n</div>","text/plain":"                              Street Address   Latitude    Longitude\n0                0 161 STREET & RIVER AVENUE  40.819225   -73.920731\n1               0 200 STREET & SOUTHERN BLVD  40.864941   -73.884903\n2                    0 44 DRIVE FOOT E.RIVER  40.745695   -73.936058\n3                           0 5 AVE & 42 STR  40.753158   -73.981132\n4                             0 BATTERY PARK  40.744585   -73.974468\n5                  0 BOARDWALK AT W 8 STREET  40.577002   -73.986038\n6                        0 CENTRAL PARK WEST   14.66772    -91.52335\n7                        0 CENTRAL TAXI HOLD  40.635351   -73.791962\n8                         0 CENTRAL TERMINAL  40.752516   -73.972672\n9                   0 CENTRAL TERMINAL BLD 1  30.029455     31.34577\n10                   0 CENTRAL TERMINAL BLDG  40.785006   -73.877445\n11                           0 CHELSEA PIERS  40.750014   -74.008464\n12                 0 CHELSEA PIERS - PIER 61  40.750014   -74.008464\n13                   0 CHELSEA PIERS/PIER 61  40.742371   -74.004063\n14                             0 CONCOURSE B  40.785006   -73.877445\n15           0 E 72ST CENTRAL PK DRIVE NORTH  40.758375   -73.966583\n16                       0 E WEST FOOD COURT  40.785006   -73.877445\n17                          0 EAST 27 STREET   40.62528   -73.949509\n18                    0 FLUSHING MEADOW PARK  40.708126   -73.830025\n19                   0 GRAND CENTRAL STATION  40.752516   -73.972672\n20          0 GRAND CENTRAL STATION TERMINAL  40.752516   -73.972672\n21                  0 GRAND CENTRAL TERMINAL  40.752103   -73.977601\n22                0 GRAND CENTRAL TRML LOWER  40.752516   -73.972672\n23                          0 GREELEY SQUARE  40.748655   -73.988104\n24                      0 HERALD SQUARE PARK  40.750839   -73.999413\n25                             0 HUNTS POINT  40.804276   -73.885609\n26                     0 INSIDE CENTRAL PARK  40.764431   -73.962467\n27         0 INSIDE CENTRAL PARK/LASKER RINK  40.764431   -73.962467\n28                          0 J.F.K. AIRPORT  40.635351   -73.791962\n29                             0 JFK AIRPORT  40.635351   -73.791962\n...                                      ...        ...          ...\n20850                   ONE CROSS ISLAND PLZ   40.67391   -73.731733\n20851                 ONE ORCHARD BEACH ROAD   40.86631    -73.79595\n20852                         ONE PENN PLAZA  40.751822   -73.992622\n20853                 ONE PLAZA PENN STATION  40.799925   -73.971668\n20854                 P.O. BOX 34442, S-TAX2   47.60215  -122.328686\n20855             PARK AVENU & GRAND CENTRAL  33.343149      44.4021\n20856             PARK AVENU @ GRAND CENTRAL  40.752516   -73.972672\n20857                 PENN STA. AMTRAK LEVEL  40.750839   -73.999413\n20858                   PENN STATI 34 STREET  40.750839   -73.999413\n20859                PENN STATI AMTRAK LEVEL  40.750839   -73.999413\n20860         PIER # 17 SOUTH STREET SEAPORT  not found    not found\n20861           PIER 17 SOUTH STREET SEAPORT   40.70849   -74.001274\n20862                  PIER 59 CHELSEA PIERS  40.750014   -74.008464\n20863                  PIER 60 CHELSEA PIERS  40.750014   -74.008464\n20864                 PIER 60 WEST 23 STREET    40.7447   -73.997069\n20865               PIER 60 WESTSIDE HIGHWAY  40.742371   -74.004063\n20866                  PIER 62 CHELSEA PIERS  40.735111    -74.01017\n20867                 PIER 62 WEST 23 STREET    40.7447   -73.997069\n20868  PIER 62 WEST 23 STREET - CHELSEA PIER  40.742371   -74.004063\n20869                     PIER 81 W.41ST ST.  40.759125   -73.996339\n20870                 PIER 83 WEST 43 STREET    40.7597   -73.993564\n20871                  PIER I WEST 70 STREET  40.779392   -73.987645\n20872             PLAZA 2025 RICHMOND AVENUE  40.615672   -74.157071\n20873                  SPACE 12 PENN STATION  40.750839   -73.999413\n20874    SPACE NO.1 PENN STATION 33RD STREET  40.750839   -73.999413\n20875                        T-4 JFK AIRPORT  40.635351   -73.791962\n20876   TERMINAL 4 JFK INTERNATIONAL AIRPORT  40.635351   -73.791962\n20877   TERMINAL O JFK INTERNATIONAL AIRPORT  40.635351   -73.791962\n20878           TERMINAL O JFK INT'L AIRPORT  not found    not found\n20879                          TERMINIAL JFK  40.635351   -73.791962\n\n[20880 rows x 3 columns]"},"execution_count":2,"metadata":{},"output_type":"execute_result"}],"source":"from ayx import Alteryx\nimport pyarrow.parquet as pq\nimport pandas\n\ndf = pq.ParquetDataset('c:\\\\addresses.parquet').read_pandas().to_pandas()\n# Write to output #1\nAlteryx.write(df,1)\n\n"},{"cell_type":"code","execution_count":null,"metadata":{"trusted":false},"outputs":[],"source":""}],"metadata":{"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.6.0"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+          <Port>57274</Port>
+          <WorkflowName>c:\users\russell\onedrive\machine_sync\_work\alteryx product\workflows\parquet_to_csv.yxmd</WorkflowName>
+          <specialCellMetadata>[{"label":"info","contents_keyword":"Alteryx.help()","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","first_line":"Run `Alteryx.help()` for info about useful functions.","cell_type":"markdown","cell_class":"text_cell"},{"label":"deps","contents_keyword":"installPackages","cell_css":"border: 1px solid #58a; margin: 2px;","first_line":"# List all non-standard packages to be imported by your","cell_type":"code","cell_class":"code_cell"}]</specialCellMetadata>
+          <AssetManaged>True</AssetManaged>
+          <JupyterProduction>False</JupyterProduction>
+          <SqliteOverride>true</SqliteOverride>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Read Parquet, Save as CSV</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output1">
+          <RecordInfo>
+            <Field name="Street Address" size="1073741823" source="J-DATA:" type="V_WString" />
+            <Field name="Latitude" size="1073741823" source="J-DATA:" type="V_WString" />
+            <Field name="Longitude" size="1073741823" source="J-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\addresses_copied_from_parquet.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>addresses_copied_from_parquet.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Russell\AppData\Local\Temp\Engine_21552_248d5b06df2a41d0a00a8a17388e9781_\Engine_32072_8464fa34fe674c9da3b949cd9e7a8d12_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output1" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output1" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>parquet_to_csv</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
